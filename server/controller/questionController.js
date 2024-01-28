@@ -16,7 +16,7 @@ const prompt = PromptTemplate.fromTemplate(promptTemplate);
 // Initialize the LLM to use to answer the question.
 const model = new OpenAI({
     temperature: 0,
-    openAIApiKey:"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",
+    openAIApiKey:"",
 });
 const loader = YoutubeLoader.createFromUrl(videoUrl, {
     language: "en",
