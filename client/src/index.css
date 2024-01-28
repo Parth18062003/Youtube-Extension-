@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.heading {
+  font-family: sans-serif;
+  color: #e1e1e1;
+  font-weight: 700;
+  font-size: 10rem;
+  background: transparent;
+}
+
+.sub-heading {
+  font-family: sans-serif;
+  color: #e1e1e1;
+  font-weight: 700;
+  font-size: 4rem;
+  background: transparent;
+}
+
+.sub-heading span {
+  background: hsla(152, 100%, 50%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 5.5rem;
+  }
+  .sub-heading,
+  .sub-heading > span {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .input-field {
+    width: 20rem !important;
+  }
+}
+
+.center {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: hsla(120, 6%, 90%, 1);
+  background: linear-gradient(360deg, rgb(72, 72, 72) 10%, rgb(16, 16, 16) 90%); 
+}
+
+.input-field {
+  width: 30rem;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border: none;
+  color: #000000;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 5000px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.input-field:hover {
+  background: #e1e1e1;
+  outline: none;
+}
+
+.input-field[type="text"] {
+  font-weight: 500;
+  color: #101010;
+}
+
+.button {
+  width: 13rem;
+  background: transparent;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.7rem;
+  color: #000000;
+  background: hsla(152, 100%, 50%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+  margin-top: 2rem;
+  border: none;
+  border-radius: 5000px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.button:hover {
+  background-position: center left;
+  outline: none;
+}
+
+.summary > span {
+  background: transparent;
+  text-align: justify;
+  color: #e1e1e1;
+  font-size: 1.3rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: hsla(120, 6%, 90%, 1);
+  background: linear-gradient(360deg, rgb(16, 16, 16) 10%, rgb(72, 72, 72) 90%); 
+  height: 100vh;
+  position: relative;
+}
+
+.summary {
+  padding: 0.3rem;
+  position: relative;
+  top: 17%;
+  left: 20%;
+  border-radius: 10%;
+  background-color: #e1e1e1;
+  width: 30rem;
+  height: 30rem;
+}
+
+.summary > div {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.qNa {
+  padding: 0.3rem;
+  position: relative;
+  margin-top: 7.2rem;
+}
+
+.qNa h2 {
+  color: #e1e1e1;
+  font-size: 1.5rem;
+}
+
+.question {
+  width: 30rem;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border: none;
+  color: #000000;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 5000px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.answer-btn {
+  width: 10rem;
+  background: transparent;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: #000000;
+  background: hsla(152, 100%, 50%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+  margin-top: 2rem;
+  border: none;
+  border-radius: 5000px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.answer {
+  padding: 0.5rem;
+  position: relative;
+  font-size: 1.2rem;
+  background-color: #e1e1e1;
+  margin-top: 1rem;
+  width: 30rem;
+  height: 10rem;
+  border-radius: 30px;
+}
