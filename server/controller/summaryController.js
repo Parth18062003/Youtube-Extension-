@@ -7,7 +7,7 @@ import { FaissStore } from "@langchain/community/vectorstores/faiss";
 import { OpenAI } from "@langchain/openai";
 
 const embeddings = new OpenAIEmbeddings({
-    openAIApiKey: "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", // In Node.js defaults to process.env.OPENAI_API_KEY
+    openAIApiKey: "", // In Node.js defaults to process.env.OPENAI_API_KEY
     batchSize: 512, // Default value if omitted is 512. Max is 2048
   });
 
